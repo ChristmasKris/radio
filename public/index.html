@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8"/>
+		<title>Radio</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+		<link rel="stylesheet" type="text/css" href="./index.css"/>
+		<script src="./FontAwesome.min.js"></script>
+	</head>
+	<body>
+		<div class="page">
+			<div class="pageInner">
+				<div class="loading">
+					<i class="fa-light fa-spinner-third"></i>
+					<span>Loading...</span>
+				</div>
+				<div class="countrySelect" state="false">
+					<div class="display">
+						<span>Select country...</span>
+					</div>
+					<div class="arrow">
+						<i class="fa-regular fa-angle-down"></i>
+					</div>
+				</div>
+				<div class="countries"></div>
+				<div class="stations"></div>
+				<div class="favorites"></div>
+				<div class="player">
+					<audio src=""></audio>
+					<div class="homeButton">
+						<i class="fa-light fa-house"></i>
+					</div>
+					<button class="scrollStation previous">
+						<i class="fa-light fa-backward"></i>
+					</button>
+					<button class="playPause">
+						<i class="fa-light fa-play"></i>
+					</button>
+					<button class="scrollStation next">
+						<i class="fa-light fa-forward"></i>
+					</button>
+					<button class="favoriteButton">
+						<i class="fa-light fa-heart"></i>
+					</button>
+				</div>
+			</div>
+		</div>
+		<script src="./general.js"></script>
+		<script src="./index.js"></script>
+	</body>
+</html>
