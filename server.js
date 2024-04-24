@@ -34,13 +34,6 @@ const radio = {
 		port = 3000;
 	}
 	
-	app.get('/news', async (req, res) => {
-		res.setHeader('Access-Control-Allow-Origin', '*');
-		let fetchData = await fetch(`https://www.stuff.co.nz/rss`);
-		let rssText = await fetchData.text();
-		res.type('text').send(rssText);
-	});
-	
 	app.get('/radioStations', async (req, res) => {
 		res.setHeader('Access-Control-Allow-Origin', '*');
 		res.json(radio.stations);
